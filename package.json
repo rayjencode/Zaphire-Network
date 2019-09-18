@@ -1,0 +1,31 @@
+{
+  "name": "zaphire-networking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "dashboard": "npm start --prefix dashboard",
+    "dev": "concurrently \"npm run server\" \"npm run dashboard\""
+  },
+  "author": "Rayjens Code",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.3.1",
+    "config": "^3.2.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.11",
+    "node-sass": "^4.12.0",
+    "request": "^2.88.0",
+    "shards-ui": "^3.0.0",
+    "uuid": "^3.3.3"
+  },
+  "devDependencies": {
+    "concurrently": "^4.1.2",
+    "nodemon": "^1.19.1"
+  }
+}
